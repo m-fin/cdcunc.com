@@ -1,289 +1,386 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Carolina Data Challenge</title>
 
-		<!--CSS-->
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carolina Data Challenge</title>
 
-    <body>
-        <section class="hero is-info is-fullheight">
+    <!--CSS-->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bulma-0.7.5/css/bulma.css">
+    <link rel="stylesheet" href="./css/mystyles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+</head>
+
+<body>
+    <section class="hero is-info is-fullheight">
         <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="https://bulma.io">
-                        <h1>CADS</h1>
-                    </a>
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                    <h1>CADS</h1>
+                </a>
+            </div>
+
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <span class="navbar-item">
+                        <a class="button is-white is-outlined" href="#home">
+                            <span class="icon">
+                                <i class="fa fa-home"></i>
+                            </span>
+                            <span>Home</span>
+                        </a>
+                    </span>
+                    <span class="navbar-item">
+                        <a class="button is-white is-outlined" href="#info">
+                            <span class="icon">
+                                <i class="fa fa-book"></i>
+                            </span>
+                            <span>Info</span>
+                        </a>
+                    </span>
+                    <span class="navbar-item">
+                        <a class="button is-white is-outlined" href="#sponsors">
+                            <span class="icon">
+                                <i class="fa fa-money-bill"></i>
+                            </span>
+                            <span>Sponsors</span>
+                        </a>
+                    </span>
+                    <span class="navbar-item">
+                        <a class="button is-white is-outlined" href="#contact">
+                            <span class="icon">
+                                <i class="fa fa-address-book"></i>
+                            </span>
+                            <span>Contact</span>
+                        </a>
+                    </span>
+                    <span class="navbar-item">
+                        <a class="button is-warning is-white"
+                            href="https://github.com/dansup/bulma-templates/blob/master/templates/landing.html">
+                            <span class="icon">
+                                <i class="fa fa-address-book"></i>
+                            </span>
+                            <span>Register</span>
+                        </a>
+                    </span>
                 </div>
-                
-                <div id="navbarMenu" class="navbar-menu">
-                        <div class="navbar-end">
-                            <span class="navbar-item">
-                                <a class="button is-white is-outlined" href="#home">
-                                    <span class="icon">
-                                        <i class="fa fa-home"></i>
-                                    </span>
-                                    <span>Home</span>
-                                </a>
-                            </span>
-                            <span class="navbar-item">
-                                <a class="button is-white is-outlined" href="#info">
-                                    <span class="icon">
-                                        <i class="fa fa-book"></i>
-                                    </span>
-                                    <span>Info</span>
-                                </a>
-                            </span>
-                            <span class="navbar-item">
-                                <a class="button is-white is-outlined" href="#sponsors">
-                                    <span class="icon">
-                                        <i class="fa fa-money-bill"></i>
-                                    </span>
-                                    <span>Sponsors</span>
-                                </a>
-                            </span>
-                            <span class="navbar-item">
-                                <a class="button is-white is-outlined" href="https://github.com/dansup/bulma-templates/blob/master/templates/landing.html">
-                                    <span class="icon">
-                                        <i class="fa fa-address-book"></i>
-                                    </span>
-                                    <span>Contact</span>
-                                </a>
-                            </span>
-                            <span class="navbar-item">
-                                    <a class="button is-warning is-white" href="https://github.com/dansup/bulma-templates/blob/master/templates/landing.html">
-                                        <span class="icon">
-                                            <i class="fa fa-address-book"></i>
-                                        </span>
-                                        <span>Register</span>
-                                    </a>
-                                </span>
-                        </div>
+            </div>
+            </div>
+        </nav>
+
+
+
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+        <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+        <script src="./scripts/particles.js"></script>
+
+        <!--Landing body-->
+        <div class="hero-body" id="home">
+            <div class="container has-text-centered">
+                <img src="./img/CDC-logo.png" width="70%">
+                <h4 style="color:#545E60">Powered by</h4>
+                <img src="./img/captech_topcrop.png" width="25%">
+
+                <div class="columns has-text-centered">
+                    <div class="column is-one-fifth"></div>
+                    <div class="column">
+                        <a class="button is-warning is-focused is-fullwidth" href="/">
+                            Register
+                        </a>
                     </div>
-                </div>
-            </nav>
-
-
-
-            <!-- particles.js container -->
-            <div id="particles-js"></div>
-            <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
-            <script  src="./scripts/particles.js"></script>
-            
-            <!--Landing body-->
-            <div class="hero-body" id="home">
-                <div class="container has-text-centered">
-                    <img src="./img/CDC-logo.png" width="70%">
-                    <h4>Powered by</h4>
-                    <img src="./img/captech_topcrop.png" width="30%">
-
-                    <div class="columns has-text-centered">
-                        <div class="column is-one-fifth"></div>
-                        <div class="column">
-                            <a class="button is-warning is-focused is-fullwidth" href="/">
-                                Register
-                            </a>
-                        </div>
-                        <div class="column">
-                            <a class="button is-warning is-focused is-fullwidth" href="/">
-                                Help Volunteer
-                            </a>
-                        </div>
-                        <div class="column is-one-fifth"></div>
-                    </div>  
+                    <div class="column">
+                        <a class="button is-warning is-focused is-fullwidth" href="/">
+                            Help Volunteer
+                        </a>
+                    </div>
+                    <div class="column is-one-fifth"></div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="hero is-medium is-warning is-bold" id="info">
-            <div class="hero-body">
-                <div class="container">
-                    <h1>When: 
-                        <b>
-                            October 5th, 8am - October 6th, 12pm, 2019
-                        </b>
-                    </h1>
-                    <h1>Where:
-                        <b>
-                            Sitterson Hall,
-                            201 S. Columbia St,
-                            Chapel Hill, 27599
-                        </b>
-                    </h1>
-                </div>
-            </div>
-        </section>
-
-        <section class="hero is-dark is-fullheight">
-            <div class="hero-body">
-                <div class="container">
-                    <h1>
-                        <b>
-                            What?
-                        </b>
-                    </h1>
-                    <p class="is-size-4"> 
-                        The Carolina Data Challenge is a 24-hour data science oriented hackathon hosted at The University of North Carolina at Chapel Hill.
-                    </p>
-                    <p class="is-size-4">
-                        Participants will have the opportunitiy to hack on a dataset from either the financial, technology or non-profit sector. At the end of the event, sponsors will present awards based on presentation materials such as visualizations, predictive models, valuable insights, etc.
-                    </p>
-                    <p class="is-size-4">
-                        We want this event to be accessible to data scientists of all skill levels! We plan on having sponsors and mentors hold workshops that will provide hands-on experience with data science concepts such as model building and visualization.
-                    </p>
-                    <p class="is-size-4">
-                            The event is completely free and meals are included! However, transportation is not available to the event this year, so participants must make their own travel arrangements"
-                    </p>
-
-                    <h1>
-                        <b>
-                            Who can come?
-                        </b>
-                    </h1>
-                    <p class="is-size-4">
-                        Both undergraduate as well as master's students may participate in the event. There is also no restriction on which school participants attend. However, this year, we will not be able to provide transportation to UNC so students must make their own travel arrangements.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="hero">
-            <div class="hero-body has-text-centered">
-                <div class="columns is-centered">
-                    <div class="column is-half">
-                        <div class="container has-text-centered">
-                            <h1>
-                                <b>
-                                    2018 Winners
-                                </b>
-                            </h1>
-                        </div>
-                    <div class="table-container">
-                            <table class="table">
-                                <thead>
-                                        <tr>
-                                        <th scope="col">Place</th>
-                                        <th scope="col">Team Name</th>
-                                        <th scope="col">Team Members</th>
-                                        <th scope="col">Project Links</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                        <th scope="row">1st - Best Insight</th>
-                                        <td>Big Baller Analytics</td>
-                                        <td>Vibhu Ambil<br>George Dimitrov<br>Sahil Patel<br>Tyler Youngberg</td>
-                                        <td><a target="_blank" href = "https://drive.google.com/file/d/1bYTzrMsozqJAHe1yr57YxfX9G6UvNu64/view?usp=sharing">Write up</a><br>
-                                            <a target="_blank" href = "https://docs.google.com/presentation/d/1GtqWYuhvl69iIknB6HxDVG8GZOs9Ugstb1UE-l7zp08/edit?usp=sharing">Project Site</a>
-                                        </td>
-                                        </tr>
-                                        <tr>
-                                        <th scope="row">2nd - Best Insight</th>
-                                        <td>Analytics Anonymous</td>
-                                        <td>Micheal Bono<br>James Bury<br>Evan Vitkus</td>
-                                        <td><a target="_blank" href = "https://drive.google.com/file/d/1CG02Fd0VmA0XwB_I8UGgDNr4KeKy0mJ6/view?usp=sharing">Write up</a><br>
-                                            <a target="_blank" href = "https://data.world/jamesb3/data-challenge">Project Site</a>
-                                        </td>
-                                        </tr>
-                                        <tr>
-                                        <th scope="row">1st - Visualization</th>
-                                        <td>int elligent = us;</td>
-                                        <td>Surya Poddutoori<br>Jonah Soberano<br>Rahul Narvekar</td>
-                                        <td><a target="_blank" href = "https://drive.google.com/file/d/16s3HtKzNHpzc5kvbU59rXZroPq_j63W5/view?usp=sharing">Write up</a><br>
-                                            <a target="_blank" href = "https://rahul200023.wixsite.com/mysite">Project Site</a>
-                                        </td>
-                                        </tr>
-                                        <tr>
-                                        <th scope="row">2nd - Visualization</th>
-                                        <td>Team Sam</td>
-                                        <td>Marc Rovner<br>Joshua Jiang<br>Bill Hansen<br>Ted Henson</td>
-                                        <td><a target="_blank" href ="https://drive.google.com/file/d/1PTFpB1DjRQ3T07FV55ZJQ5w7J9XQRKYM/view?usp=sharing">Write up</a><br>
-                                            <a target="_blank" href = "https://drive.google.com/file/d/1oQcDgLltMQJAQ1QiL7IyFzSNzVWYJsTo/view?usp=sharing">Project Site</a>
-                                        </td>
-                                        </tr>
-                                        <tr>
-                                        <th scope="row">1st - Outside Data</th>
-                                        <td>No Javial? No Problem</td>
-                                        <td>Jacob McCright<br>George Lidner</td>
-                                        <td><a target="_blank" href ="https://drive.google.com/file/d/1doYZjHj9nLMhW5p7Tq4Ud8kfNBqzl1oW/view?usp=sharing">Write up</a><br>
-                                        </td>
-                                        </tr>
-                                        <tr>
-                                        <th scope="row">2nd - Outside Data</th>
-                                        <td>MFE</td>
-                                        <td>Ruochen Li<br>Luokexin Mo<br>Songhe Wang<br>Hanqi Zhang</td>
-                                        <td><a target="_blank" href ="https://drive.google.com/file/d/1NaNtmYN_1jjv79ScdjIcD_IuMnnq4NCf/view?usp=sharing">Write up</a><br>
-                                            <a target="_blank" href = "http://data.world/liruochen1998/nba-position/">Project Site</a>
-                                        </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </section>
-        <section class="section sponsors">
+    <section class="hero is-medium is-primary is-bold" id="info">
+        <div class="hero-body">
             <div class="container">
-                <div class="columns is-centered">
-                    <div>
+                <h1>When:
+                    <b>
+                        October 5th, 8am - October 6th, 12pm, 2019
+                    </b>
+                </h1>
+                <h1>Where:
+                    <b>
+                        Sitterson Hall,
+                        201 S. Columbia St,
+                        Chapel Hill, 27599
+                    </b>
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-dark is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <h1>
+                    <b>
+                        What?
+                    </b>
+                </h1>
+                <p class="is-size-4">
+                    The Carolina Data Challenge is a 24-hour data science oriented hackathon hosted at The University of
+                    North Carolina at Chapel Hill.
+                </p>
+                <p class="is-size-4">
+                    Participants will have the opportunitiy to hack on a dataset from either the financial, technology
+                    or non-profit sector. At the end of the event, sponsors will present awards based on presentation
+                    materials such as visualizations, predictive models, valuable insights, etc.
+                </p>
+                <p class="is-size-4">
+                    We want this event to be accessible to data scientists of all skill levels! We plan on having
+                    sponsors and mentors hold workshops that will provide hands-on experience with data science concepts
+                    such as model building and visualization.
+                </p>
+                <p class="is-size-4">
+                    The event is completely free and meals are included! However, transportation is not available to the
+                    event this year, so participants must make their own travel arrangements"
+                </p>
+
+                <h1>
+                    <b>
+                        Who can come?
+                    </b>
+                </h1>
+                <p class="is-size-4">
+                    Both undergraduate as well as master's students may participate in the event. There is also no
+                    restriction on which school participants attend. However, this year, we will not be able to provide
+                    transportation to UNC so students must make their own travel arrangements.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body has-text-centered">
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <div class="container has-text-centered">
                         <h1>
                             <b>
-                                Our Sponsors
+                                2018 Winners
                             </b>
                         </h1>
                     </div>
-                </div>
-                <div class="columns is-centered">
-                    <div>
-                        <img src="img/captech.png" width="400">
-                    </div>
-                </div>
-                <div class="columns is-centered is-vcentered">
-                    <div class="column is-one-quarter has-text-centered">
-                        <img src="img/barings2.png">
-                    </div>
-                    <div class="column is-one-quarter has-text-centered">
-                        <img src="img/ey2.png" width="120">
-                    </div>
-                    <div class="column is-one-quarter has-text-centered">
-                        <img src="img/fidelity.png">
-                    </div>
-                    <div class="column is-one-quarter has-text-centered">
-                        <img src="img/iaa.svg">
-                    </div>
-                </div>
-                <div class="columns is-centered is-vcentered">
-                    <div class="column is-one-quarter has-text-centered">
-                        <img src="img/sas.png">
-                    </div>
-                    <div class="column is-one-quarter has-text-centered">
-                        <img src="img/renci.png" width="120">
-                    </div>
-                    <div class="column is-one-quarter has-text-centered">
-                        <img src="img/ncds.jpg">
-                    </div>
-                    <div class="column is-one-quarter has-text-centered">
-                        <img src="img/unc-cs.png">
+                    <div class="table-container">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Place</th>
+                                    <th scope="col">Team Name</th>
+                                    <th scope="col">Team Members</th>
+                                    <th scope="col">Project Links</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1st - Best Insight</th>
+                                    <td>Big Baller Analytics</td>
+                                    <td>Vibhu Ambil<br>George Dimitrov<br>Sahil Patel<br>Tyler Youngberg</td>
+                                    <td><a target="_blank"
+                                            href="https://drive.google.com/file/d/1bYTzrMsozqJAHe1yr57YxfX9G6UvNu64/view?usp=sharing">Write
+                                            up</a><br>
+                                        <a target="_blank"
+                                            href="https://docs.google.com/presentation/d/1GtqWYuhvl69iIknB6HxDVG8GZOs9Ugstb1UE-l7zp08/edit?usp=sharing">Project
+                                            Site</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2nd - Best Insight</th>
+                                    <td>Analytics Anonymous</td>
+                                    <td>Micheal Bono<br>James Bury<br>Evan Vitkus</td>
+                                    <td><a target="_blank"
+                                            href="https://drive.google.com/file/d/1CG02Fd0VmA0XwB_I8UGgDNr4KeKy0mJ6/view?usp=sharing">Write
+                                            up</a><br>
+                                        <a target="_blank" href="https://data.world/jamesb3/data-challenge">Project
+                                            Site</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1st - Visualization</th>
+                                    <td>int elligent = us;</td>
+                                    <td>Surya Poddutoori<br>Jonah Soberano<br>Rahul Narvekar</td>
+                                    <td><a target="_blank"
+                                            href="https://drive.google.com/file/d/16s3HtKzNHpzc5kvbU59rXZroPq_j63W5/view?usp=sharing">Write
+                                            up</a><br>
+                                        <a target="_blank" href="https://rahul200023.wixsite.com/mysite">Project
+                                            Site</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2nd - Visualization</th>
+                                    <td>Team Sam</td>
+                                    <td>Marc Rovner<br>Joshua Jiang<br>Bill Hansen<br>Ted Henson</td>
+                                    <td><a target="_blank"
+                                            href="https://drive.google.com/file/d/1PTFpB1DjRQ3T07FV55ZJQ5w7J9XQRKYM/view?usp=sharing">Write
+                                            up</a><br>
+                                        <a target="_blank"
+                                            href="https://drive.google.com/file/d/1oQcDgLltMQJAQ1QiL7IyFzSNzVWYJsTo/view?usp=sharing">Project
+                                            Site</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1st - Outside Data</th>
+                                    <td>No Javial? No Problem</td>
+                                    <td>Jacob McCright<br>George Lidner</td>
+                                    <td><a target="_blank"
+                                            href="https://drive.google.com/file/d/1doYZjHj9nLMhW5p7Tq4Ud8kfNBqzl1oW/view?usp=sharing">Write
+                                            up</a><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2nd - Outside Data</th>
+                                    <td>MFE</td>
+                                    <td>Ruochen Li<br>Luokexin Mo<br>Songhe Wang<br>Hanqi Zhang</td>
+                                    <td><a target="_blank"
+                                            href="https://drive.google.com/file/d/1NaNtmYN_1jjv79ScdjIcD_IuMnnq4NCf/view?usp=sharing">Write
+                                            up</a><br>
+                                        <a target="_blank" href="http://data.world/liruochen1998/nba-position/">Project
+                                            Site</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-        </section>
-        <footer class="footer" style="padding-bottom:2vh">
-                <div class="content has-text-centered">
-                    <p>
-                        Hosted by <strong><a href="https://carolinadata.unc.edu/">Carolina Analytics and Data Science</strong>.
-                        <br>
-                            carolinadatascience@gmail.com
-                        </br>
-                    </p>
-                  <img src="./img/logo-without-blue.png" width="160">
+        </div>
+    </section>
+    <section class="section sponsors" id="sponsors">
+        <div class="container">
+            <div class="columns is-centered">
+                <div>
+                    <h1>
+                        <b>
+                            Our Sponsors
+                        </b>
+                    </h1>
                 </div>
-        </footer>
-    </body>
+            </div>
+            <div class="columns is-centered">
+                <div>
+                    <img src="img/captech.png" width="400">
+                </div>
+            </div>
+            <div class="columns is-centered is-vcentered">
+                <div class="column is-one-quarter has-text-centered">
+                    <img src="img/barings2.png">
+                </div>
+                <div class="column is-one-quarter has-text-centered">
+                    <img src="img/ey2.png" width="120">
+                </div>
+                <div class="column is-one-quarter has-text-centered">
+                    <img src="img/fidelity.png">
+                </div>
+                <div class="column is-one-quarter has-text-centered">
+                    <img src="img/iaa.svg">
+                </div>
+            </div>
+            <div class="columns is-centered is-vcentered">
+                <div class="column is-one-quarter has-text-centered">
+                    <img src="img/sas.png">
+                </div>
+                <div class="column is-one-quarter has-text-centered">
+                    <img src="img/renci.png" width="120">
+                </div>
+                <div class="column is-one-quarter has-text-centered">
+                    <img src="img/ncds.jpg">
+                </div>
+                <div class="column is-one-quarter has-text-centered">
+                    <img src="img/unc-cs.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="columns is-centered has-text-centered">
+                <div>
+                    <h2>
+                        <b>
+                            Need Help, Contact Us!
+                        </b>
+                    </h2>
+                    <h3>
+                        Managing Directors
+                    </h3>
+                    <br>
+                </div>
+            </div>
+            <div class="columns is-centered">
+                <div class="column has-text-centered is-3">
+                    <img src="img/rahul.jpg">
+                    <p></p>
+                    <h4>
+                        <b>
+                            Rahul Narvekar
+                        </b>
+                    </h4>
+                    <p>
+                        <a href="mailto:rnarveka@live.unc.edu">
+                            rnarveka@live.unc.edu
+                        </a>
+                    </p>
+                </div>
+                <div class="column has-text-centered is-3">
+                    <img src="img/shara.jpg">
+                    <p></p>
+                    <h4>
+                        <b>
+                            Shara He
+                        </b>
+                    </h4>
+                    <p>
+                        <a href="mailto:rnarveka@live.unc.edu">
+                            rnarveka@live.unc.edu
+                        </a>
+                    </p>
+                </div>
+                <div class="column has-text-centered is-3">
+                    <img src="img/lindsay.jpg">
+                    <p></p>
+                    <h4>
+                        <b>
+                            Lindsay Zhou
+                        </b>
+                    </h4>
+                    <p>
+                        <a href="mailto:linzhou@live.unc.edu">
+                            linzhou@live.unc.edu
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" style="padding-bottom:2vh">
+        <div class="content has-text-centered">
+            <p>
+                Hosted by <strong><a href="https://carolinadata.unc.edu/">Carolina Analytics and Data Science</strong>.
+                <br>
+                carolinadatascience@gmail.com
+                </br>
+            </p>
+            <img src="./img/logo-without-blue.png" width="160">
+        </div>
+    </footer>
+</body>
+
 </html>
