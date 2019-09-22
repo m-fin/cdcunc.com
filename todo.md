@@ -1,0 +1,3 @@
+-navbar
+    -translucent?
+-add icon
