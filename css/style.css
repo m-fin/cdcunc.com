@@ -4,6 +4,8 @@ html,body,h1,h2,h3,h4,p {
 
 .navbar {
     box-shadow: none !important;
+    position: relative;
+    margin-bottom: 0;
 }
 
 html {
@@ -13,6 +15,7 @@ html {
 #CADS {
   color:#FFFFFF;
 }
+
 
 
 
