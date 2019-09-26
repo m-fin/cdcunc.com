@@ -16,6 +16,10 @@ html {
   color:#FFFFFF;
 }
 
+#home {
+  background-color: #96bfff;
+}
+
 
 
 
@@ -35,7 +39,7 @@ body {
   
   #particles-js {
     position: absolute;
-    width: 100%;
+    min-width:100%;
     height: 100%;
     background-color: #96bfff;
     background-image: url("");
