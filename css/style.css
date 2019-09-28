@@ -17,7 +17,12 @@ html {
 }
 
 
-
+.table-header-25 {
+  width: 25%;
+}
+.table-header-50 {
+  width: 50%;
+}
 
 /* ---- particles ---- */
 
