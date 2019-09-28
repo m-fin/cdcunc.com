@@ -24,9 +24,8 @@
         <div id="particles-js"></div>
         <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
         <script src="./scripts/particles.js"></script>
-<<<<<<< HEAD
 
-        <nav class="navbar" id="navbar" role="navigation" aria-label="main navigation">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="https://carolinadata.unc.edu/" id="CADS">
                     <h1>CADS</h1>
@@ -52,6 +51,22 @@
                         </a>
                     </span>
                     <span class="navbar-item">
+                        <a class="button is-white is-outlined" href="#schedule">
+                            <span class="icon">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                            <span>Schedule</span>
+                        </a>
+                    </span>
+                    <span class="navbar-item">
+                        <a class="button is-white is-outlined" href="#winners">
+                            <span class="icon">
+                                <i class="fa fa-trophy" aria-hidden="true"></i>
+                            </span>
+                            <span>Winners</span>
+                        </a>
+                    </span>
+                    <span class="navbar-item">
                         <a class="button is-white is-outlined" href="#sponsors">
                             <span class="icon">
                                 <i class="fa fa-link"></i>
@@ -69,77 +84,16 @@
                     </span>
                     <span class="navbar-item">
                         <a class="button is-warning is-white"
-                            href="https://carolinadatachallenge.typeform.com/to/BDayXB">
+                            href="https://carolinadatachallenge.typeform.com/to/vmVR4a">
                             <span class="icon">
                                 <i class="fa fa-sign-in-alt"></i>
                             </span>
                             <span>Register</span>
                         </a>
                     </span>
-=======
-        
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="https://carolinadata.unc.edu/" id="CADS">
-                        <h1>CADS</h1>
-                    </a>
                 </div>
-    
-                <div id="navbarMenu" class="navbar-menu">
-                    <div class="navbar-end">
-                        <span class="navbar-item">
-                            <a class="button is-white is-outlined" href="#home">
-                                <span class="icon">
-                                    <i class="fa fa-home"></i>
-                                </span>
-                                <span>Home</span>
-                            </a>
-                        </span>
-                        <span class="navbar-item">
-                            <a class="button is-white is-outlined" href="#info">
-                                <span class="icon">
-                                    <i class="fa fa-book"></i>
-                                </span>
-                                <span>Info</span>
-                            </a>
-                        </span>
-                        <span class="navbar-item">
-                            <a class="button is-white is-outlined" href="#schedule">
-                                <span class="icon">
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                </span>
-                                <span>Schedule</span>
-                            </a>
-                        </span>
-                        <span class="navbar-item">
-                            <a class="button is-white is-outlined" href="#sponsors">
-                                <span class="icon">
-                                    <i class="fa fa-link"></i>
-                                </span>
-                                <span>Sponsors</span>
-                            </a>
-                        </span>
-                        <span class="navbar-item">
-                            <a class="button is-white is-outlined" href="#contact">
-                                <span class="icon">
-                                    <i class="fa fa-address-book"></i>
-                                </span>
-                                <span>Contact</span>
-                            </a>
-                        </span>
-                        <span class="navbar-item">
-                            <a class="button is-warning is-white"
-                                href="https://carolinadatachallenge.typeform.com/to/vmVR4a">
-                                <span class="icon">
-                                    <i class="fa fa-sign-in-alt"></i>
-                                </span>
-                                <span>Register</span>
-                            </a>
-                        </span>
-                    </div>
-                </div>
->>>>>>> 422efbdb65fb44d6c2c842a75dc401e5f728908c
-                </div>
+            </div>
+            </div>
             </div>
             </div>
         </nav>
@@ -168,8 +122,8 @@
                     <div class="column is-one-fifth"></div>
                 </div>
             </div>
-        </div>    
-    </div>
+        </div>
+        </div>
     </section>
     <section class="hero is-danger">
         <div class="hero-body">
@@ -241,150 +195,689 @@
                 </p>
             </div>
         </div>
-    </section>    
-    <section class = "hero is-info" id="schedule">
+    </section>
+
+    <section class="hero is-info" id="schedule">
         <div class="hero-body">
-            <div class = "container">
-                <h2><b>Tentative Schedule</b></h2>
-                <h3> Saturday October 5th </h3>
+            <div class="container" id="schedule_table">
+                <h3 style="text-align: center">Tentative Schedule</h3>
+                <div class="columns">
+                    <div class="column is-10 is-offset-1">
+                        <h2 style="text-align: center"><b>Saturday October 5th</b></h2>
+                        <table class="table">
+                            <thead id="schedule_table">
+                                <tr>
+                                    <th>
+                                        <h4>Time</h4>
+                                    </th>
+                                    <th>
+                                        <h4>Activity</h4>
+                                    </th>
+                                    <th>
+                                        <h4>Location</h4>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="schedule_table">
+                                <tr>
+                                    <td>
+                                        <p>8:00AM - 9:45AM</p>
+                                    </td>
+                                    <td>
+                                        <p>Registration</p>
+                                    </td>
+                                    <td>
+                                        <p>Sitterson Lobby</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>8:00AM - 9:45AM</p>
+                                    </td>
+                                    <td>
+                                        <p>Breakfast</p>
+                                    </td>
+                                    <td>
+                                        <p>Entreprenuer Lounge</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>10:00AM - 10:45AM</p>
+                                    </td>
+                                    <td>
+                                        <p>Opening Ceremony</p>
+                                    </td>
+                                    <td>
+                                        <p>Chapman</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>11:00AM</p>
+                                    </td>
+                                    <td>
+                                        <p>Hacking Begins</p>
+                                    </td>
+                                    <td>
+                                        <p></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>11:00AM - 11:30AM</p>
+                                    </td>
+                                    <td>
+                                        <p>Team Matching</p>
+                                    </td>
+                                    <td>
+                                        <p>SN014</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>11:00AM - 1:00PM</p>
+                                    </td>
+                                    <td>
+                                        <p>Sponsorship Fair</p>
+                                    </td>
+                                    <td>
+                                        <p>Sitterson Lobby</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>12:00PM - 2:00PM</p>
+                                    </td>
+                                    <td>
+                                        <p>Lunch</p>
+                                    </td>
+                                    <td>
+                                        <p>Entreprenuer Lounge</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>1:00PM</p>
+                                    </td>
+                                    <td>
+                                        <p>CapTech - Tableau Data Visualization</p>
+                                    </td>
+                                    <td>
+                                        <p>FB009</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>1:55PM</p>
+                                    </td>
+                                    <td>
+                                        <p>Barings - Data Science Applied to Finance</p>
+                                    </td>
+                                    <td>
+                                        <p>FB009</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>2:50PM</p>
+                                    </td>
+                                    <td>
+                                        <p>EY - Business Analytics -> Data Science to Stakeholders</p>
+                                    </td>
+                                    <td>
+                                        <p>FB009</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>3:45PM</p>
+                                    </td>
+                                    <td>
+                                        <p>SAS - Visual Text Analyticss</p>
+                                    </td>
+                                    <td>
+                                        <p>FB009</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>4:40PM</p>
+                                    </td>
+                                    <td>
+                                        <p>NCSU IAA - Machine Learning</p>
+                                    </td>
+                                    <td>
+                                        <p>FB009</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>5:35PM</p>
+                                    </td>
+                                    <td>
+                                        <p>Valassis - Modern Data Science in AdTech</p>
+                                    </td>
+                                    <td>
+                                        <p>FB009</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>6:30PM - 8:30PM</p>
+                                    </td>
+                                    <td>
+                                        <p>Dinner</p>
+                                    </td>
+                                    <td>
+                                        <p>Entreprenuer Lounge</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>8:30PM</p>
+                                    </td>
+                                    <td>
+                                        <p>Woman in Data Science Panel</p>
+                                    </td>
+                                    <td>
+                                        <p>FB007</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>10:00PM</p>
+                                    </td>
+                                    <td>
+                                        <p>Sleeping Rooms Open</p>
+                                    </td>
+                                    <td>
+                                        <p>FB008, FB009</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>11:00PM</p>
+                                    </td>
+                                    <td>
+                                        <p>Sitterson Lobby</p>
+                                    </td>
+                                    <td>
+                                        <p>FB008, FB009</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2 style="text-align: center"><b>Sunday October 6th</b></h2>
+                        <table class="table">
+                            <thead id="schedule_table">
+                                <tr>
+                                    <th>
+                                        <h4>Time</h4>
+                                    </th>
+                                    <th>
+                                        <h4>Activity</h4>
+                                    </th>
+                                    <th>
+                                        <h4>Location</h4>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="schedule_table">
+                                <tr>
+                                    <td>
+                                        <p>12:00AM - 1:00AM</p>
+                                    </td>
+                                    <td>
+                                        <p>Nighttime Noms</p>
+                                    </td>
+                                    <td>
+                                        <p>Entreprenuer Lounge</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>7:00AM - 9:00AM</p>
+                                    </td>
+                                    <td>
+                                        <p>Breakfast</p>
+                                    </td>
+                                    <td>
+                                        <p>Entreprenuer Lounge</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>11:00AM</p>
+                                    </td>
+                                    <td>
+                                        <p>Hacking Ends / Project Submission Deadline</p>
+                                    </td>
+                                    <td>
+                                        <p></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>11:00AM - 2:00PM</p>
+                                    </td>
+                                    <td>
+                                        <p>Lunch</p>
+                                    </td>
+                                    <td>
+                                        <p>Entreprenuer Lounge</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>12:00PM - 2:00PM</p>
+                                    </td>
+                                    <td>
+                                        <p>Demo Fair</p>
+                                    </td>
+                                    <td>
+                                        <p>Sitterson Lobby</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>3:00PM - 4:00PM</p>
+                                    </td>
+                                    <td>
+                                        <p>Closing Ceremony</p>
+                                    </td>
+                                    <td>
+                                        <p>Chapman</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="hero-body">
+            <div class="container">
+                <h2>Tentative Schedule</h2>
+                <h3><b>Saturday October 5th</b></h3>
                 <table>
                     <thead>
                         <tr>
-                            <th class="table-header-25"><h4>Time</h4></th>
-                            <th class="table-header-50"><h4>Activity</h4></th>
-                            <th class="table-header-25"><h4>Location</h4></th>
+                            <th class="table-header-25">
+                                <h4>Time</h4>
+                            </th>
+                            <th class="table-header-50">
+                                <h4>Activity</h4>
+                            </th>
+                            <th class="table-header-25">
+                                <h4>Location</h4>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>                        
-                            <td><p>8:00AM - 9:45AM</p></td>
-                            <td><p>Registration</p></td>
-                            <td><p>Sitterson Lobby</p></td>
+                        <tr>
+                            <td>
+                                <p>8:00AM - 9:45AM</p>
+                            </td>
+                            <td>
+                                <p>Registration</p>
+                            </td>
+                            <td>
+                                <p>Sitterson Lobby</p>
+                            </td>
                         </tr>
-                        <tr>                        
-                            <td><p>8:00AM - 9:45AM</p></td>
-                            <td><p>Breakfast</p></td>
-                            <td><p>Entreprenuer Lounge</p></td>
+                        <tr>
+                            <td>
+                                <p>8:00AM - 9:45AM</p>
+                            </td>
+                            <td>
+                                <p>Breakfast</p>
+                            </td>
+                            <td>
+                                <p>Entreprenuer Lounge</p>
+                            </td>
                         </tr>
-                        <tr>                        
-                            <td><p>10:00AM - 10:45AM</p></td>
-                            <td><p>Opening Ceremony</p></td>
-                            <td><p>Chapman</p></td>
+                        <tr>
+                            <td>
+                                <p>10:00AM - 10:45AM</p>
+                            </td>
+                            <td>
+                                <p>Opening Ceremony</p>
+                            </td>
+                            <td>
+                                <p>Chapman</p>
+                            </td>
                         </tr>
-                        <tr>                        
-                            <td><p>11:00AM</p></td>
-                            <td><p>Hacking Begins</p></td>
-                            <td><p></p></td>
+                        <tr>
+                            <td>
+                                <p>11:00AM</p>
+                            </td>
+                            <td>
+                                <p>Hacking Begins</p>
+                            </td>
+                            <td>
+                                <p></p>
+                            </td>
                         </tr>
-                        <tr>                        
-                            <td><p>11:00AM - 11:30AM</p></td>
-                            <td><p>Team Matching</p></td>
-                            <td><p>SN014</p></td>
+                        <tr>
+                            <td>
+                                <p>11:00AM - 11:30AM</p>
+                            </td>
+                            <td>
+                                <p>Team Matching</p>
+                            </td>
+                            <td>
+                                <p>SN014</p>
+                            </td>
                         </tr>
-                        <tr>                        
-                            <td><p>11:00AM - 1:00PM</p></td>
-                            <td><p>Sponsorship Fair</p></td>
-                            <td><p>Sitterson Lobby</p></td>
+                        <tr>
+                            <td>
+                                <p>11:00AM - 1:00PM</p>
+                            </td>
+                            <td>
+                                <p>Sponsorship Fair</p>
+                            </td>
+                            <td>
+                                <p>Sitterson Lobby</p>
+                            </td>
                         </tr>
-                        <tr>                        
-                            <td><p>12:00PM - 2:00PM</p></td>
-                            <td><p>Lunch</p></td>
-                            <td><p>Entreprenuer Lounge</p></td>
+                        <tr>
+                            <td>
+                                <p>12:00PM - 2:00PM</p>
+                            </td>
+                            <td>
+                                <p>Lunch</p>
+                            </td>
+                            <td>
+                                <p>Entreprenuer Lounge</p>
+                            </td>
                         </tr>
-                        <tr>                        
-                            <td><p>1:00PM</p></td>
-                            <td><p>CapTech - Tableau Data Visualization</p></td>
-                            <td><p>FB009</p></td>
-                        </tr>                        
-                        <tr>                        
-                            <td><p>1:55PM</p></td>
-                            <td><p>Barings - Data Science Applied to Finance</p></td>
-                            <td><p>FB009</p></td>
-                        </tr>                 
-                        <tr>                        
-                            <td><p>2:50PM</p></td>
-                            <td><p>EY - Business Analytics -> Data Science to Stakeholders</p></td>
-                            <td><p>FB009</p></td>
-                        </tr>            
-                        <tr>                        
-                            <td><p>3:45PM</p></td>
-                            <td><p>SAS - Visual Text Analyticss</p></td>
-                            <td><p>FB009</p></td>
-                        </tr>        
-                        <tr>                        
-                            <td><p>4:40PM</p></td>
-                            <td><p>NCSU IAA - Machine Learning</p></td>
-                            <td><p>FB009</p></td>
-                        </tr> 
-                        <tr>                        
-                            <td><p>5:35PM</p></td>
-                            <td><p>Valassis - Modern Data Science in AdTech</p></td>
-                            <td><p>FB009</p></td>
-                        </tr>                       
-                        <tr>                        
-                            <td><p>6:30PM - 8:30PM</p></td>
-                            <td><p>Dinner</p></td>
-                            <td><p>Entreprenuer Lounge</p></td>
-                        </tr>                
-                        <tr>                        
-                            <td><p>8:30PM</p></td>
-                            <td><p>Woman in Data Science Panel</p></td>
-                            <td><p>FB007</p></td>
-                        </tr>          
-                        <tr>                        
-                            <td><p>10:00PM</p></td>
-                            <td><p>Sleeping Rooms Open</p></td>
-                            <td><p>FB008, FB009</p></td>
-                        </tr>    
-                        <tr>                        
-                            <td><p>11:00PM</p></td>
-                            <td><p>Sitterson Lobby</p></td>
-                            <td><p>FB008, FB009</p></td>
+                        <tr>
+                            <td>
+                                <p>1:00PM</p>
+                            </td>
+                            <td>
+                                <p>CapTech - Tableau Data Visualization</p>
+                            </td>
+                            <td>
+                                <p>FB009</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>1:55PM</p>
+                            </td>
+                            <td>
+                                <p>Barings - Data Science Applied to Finance</p>
+                            </td>
+                            <td>
+                                <p>FB009</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>2:50PM</p>
+                            </td>
+                            <td>
+                                <p>EY - Business Analytics -> Data Science to Stakeholders</p>
+                            </td>
+                            <td>
+                                <p>FB009</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>3:45PM</p>
+                            </td>
+                            <td>
+                                <p>SAS - Visual Text Analyticss</p>
+                            </td>
+                            <td>
+                                <p>FB009</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>4:40PM</p>
+                            </td>
+                            <td>
+                                <p>NCSU IAA - Machine Learning</p>
+                            </td>
+                            <td>
+                                <p>FB009</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>5:35PM</p>
+                            </td>
+                            <td>
+                                <p>Valassis - Modern Data Science in AdTech</p>
+                            </td>
+                            <td>
+                                <p>FB009</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>6:30PM - 8:30PM</p>
+                            </td>
+                            <td>
+                                <p>Dinner</p>
+                            </td>
+                            <td>
+                                <p>Entreprenuer Lounge</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>8:30PM</p>
+                            </td>
+                            <td>
+                                <p>Woman in Data Science Panel</p>
+                            </td>
+                            <td>
+                                <p>FB007</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>10:00PM</p>
+                            </td>
+                            <td>
+                                <p>Sleeping Rooms Open</p>
+                            </td>
+                            <td>
+                                <p>FB008, FB009</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>11:00PM</p>
+                            </td>
+                            <td>
+                                <p>Sitterson Lobby</p>
+                            </td>
+                            <td>
+                                <p>FB008, FB009</p>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
-                <h3> Sunday October 6th </h3>
+                <h3><b>Sunday October 6th</b></h3>
                 <table>
                     <thead>
                         <tr>
-                            <th class="table-header-25"><h4>Time</h4></th>
-                            <th class="table-header-50"><h4>Activity</h4></th>
-                            <th class="table-header-25"><h4>Location</h4></th>
+                            <th class="table-header-25">
+                                <h4>Time</h4>
+                            </th>
+                            <th class="table-header-50">
+                                <h4>Activity</h4>
+                            </th>
+                            <th class="table-header-25">
+                                <h4>Location</h4>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>                        
-                            <td><p>12:00AM - 1:00AM</p></td>
-                            <td><p>Nighttime Noms</p></td>
-                            <td><p>Entreprenuer Lounge</p></td>
+                        <tr>
+                            <td>
+                                <p>12:00AM - 1:00AM</p>
+                            </td>
+                            <td>
+                                <p>Nighttime Noms</p>
+                            </td>
+                            <td>
+                                <p>Entreprenuer Lounge</p>
+                            </td>
                         </tr>
-                        <tr>                        
-                            <td><p>7:00AM - 9:00AM</p></td>
-                            <td><p>Breakfast</p></td>
-                            <td><p>Entreprenuer Lounge</p></td>
+                        <tr>
+                            <td>
+                                <p>7:00AM - 9:00AM</p>
+                            </td>
+                            <td>
+                                <p>Breakfast</p>
+                            </td>
+                            <td>
+                                <p>Entreprenuer Lounge</p>
+                            </td>
                         </tr>
-                        <tr>                        
-                            <td><p>11:00AM</p></td>
-                            <td><p>Hacking Ends / Project Submission Deadline</p></td>
-                            <td><p></p></td>
+                        <tr>
+                            <td>
+                                <p>11:00AM</p>
+                            </td>
+                            <td>
+                                <p>Hacking Ends / Project Submission Deadline</p>
+                            </td>
+                            <td>
+                                <p></p>
+                            </td>
                         </tr>
-                        <tr>                        
-                            <td><p>11:00AM - 2:00PM</p></td>
-                            <td><p>Lunch</p></td>
-                            <td><p>Entreprenuer Lounge</p></td>
+                        <tr>
+                            <td>
+                                <p>11:00AM - 2:00PM</p>
+                            </td>
+                            <td>
+                                <p>Lunch</p>
+                            </td>
+                            <td>
+                                <p>Entreprenuer Lounge</p>
+                            </td>
                         </tr>
-                        <tr>                        
-                            <td><p>12:00PM - 2:00PM</p></td>
-                            <td><p>Demo Fair</p></td>
-                            <td><p>Sitterson Lobby</p></td>
+                        <tr>
+                            <td>
+                                <p>12:00PM - 2:00PM</p>
+                            </td>
+                            <td>
+                                <p>Demo Fair</p>
+                            </td>
+                            <td>
+                                <p>Sitterson Lobby</p>
+                            </td>
                         </tr>
-                        <tr>                        
-                            <td><p>3:00PM - 4:00PM</p></td>
-                            <td><p>Closing Ceremony</p></td>
-                            <td><p>Chapman</p></td>
+                        <tr>
+                            <td>
+                                <p>3:00PM - 4:00PM</p>
+                            </td>
+                            <td>
+                                <p>Closing Ceremony</p>
+                            </td>
+                            <td>
+                                <p>Chapman</p>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </div> -->
+    </section>
+
+    <section id="winners">
+        <br>
+        <br>
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="has-text-centered">
+                    <h2>Past Winners</h2>
+                    <span></span>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Place</th>
+                                <th scope="col">Team Name</th>
+                                <th scope="col">Team Members</th>
+                                <th scope="col">Project Links</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1st - Best Insight</th>
+                                <td>Big Baller Analytics</td>
+                                <td>Vibhu Ambil<br>George Dimitrov<br>Sahil Patel<br>Tyler Youngberg</td>
+                                <td><a target="_blank"
+                                        href="https://drive.google.com/file/d/1bYTzrMsozqJAHe1yr57YxfX9G6UvNu64/view?usp=sharing">Write
+                                        up</a><br>
+                                    <a target="_blank"
+                                        href="https://docs.google.com/presentation/d/1GtqWYuhvl69iIknB6HxDVG8GZOs9Ugstb1UE-l7zp08/edit?usp=sharing">Project
+                                        Site</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2nd - Best Insight</th>
+                                <td>Analytics Anonymous</td>
+                                <td>Micheal Bono<br>James Bury<br>Evan Vitkus</td>
+                                <td><a target="_blank"
+                                        href="https://drive.google.com/file/d/1CG02Fd0VmA0XwB_I8UGgDNr4KeKy0mJ6/view?usp=sharing">Write
+                                        up</a><br>
+                                    <a target="_blank" href="https://data.world/jamesb3/data-challenge">Project Site</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1st - Visualization</th>
+                                <td>int elligent = us;</td>
+                                <td>Surya Poddutoori<br>Jonah Soberano<br>Rahul Narvekar</td>
+                                <td><a target="_blank"
+                                        href="https://drive.google.com/file/d/16s3HtKzNHpzc5kvbU59rXZroPq_j63W5/view?usp=sharing">Write
+                                        up</a><br>
+                                    <a target="_blank" href="https://rahul200023.wixsite.com/mysite">Project Site</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2nd - Visualization</th>
+                                <td>Team Sam</td>
+                                <td>Marc Rovner<br>Joshua Jiang<br>Bill Hansen<br>Ted Henson</td>
+                                <td><a target="_blank"
+                                        href="https://drive.google.com/file/d/1PTFpB1DjRQ3T07FV55ZJQ5w7J9XQRKYM/view?usp=sharing">Write
+                                        up</a><br>
+                                    <a target="_blank"
+                                        href="https://drive.google.com/file/d/1oQcDgLltMQJAQ1QiL7IyFzSNzVWYJsTo/view?usp=sharing">Project
+                                        Site</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1st - Outside Data</th>
+                                <td>No Javial? No Problem</td>
+                                <td>Jacob McCright<br>George Lidner</td>
+                                <td><a target="_blank"
+                                        href="https://drive.google.com/file/d/1doYZjHj9nLMhW5p7Tq4Ud8kfNBqzl1oW/view?usp=sharing">Write
+                                        up</a><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2nd - Outside Data</th>
+                                <td>MFE</td>
+                                <td>Ruochen Li<br>Luokexin Mo<br>Songhe Wang<br>Hanqi Zhang</td>
+                                <td><a target="_blank"
+                                        href="https://drive.google.com/file/d/1NaNtmYN_1jjv79ScdjIcD_IuMnnq4NCf/view?usp=sharing">Write
+                                        up</a><br>
+                                    <a target="_blank" href="http://data.world/liruochen1998/nba-position/">Project
+                                        Site</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>

@@ -20,13 +20,40 @@ html {
   background-color: #96bfff;
 }
 
+#schedule_table {
+  border-bottom:0px;
+}
+#schedule_table th, #schedule_table td {
+  border: 0px;
+}
 
-.table-header-25 {
+#schedule_table>tr>th{
+  background-color: #209CED;
+  color: white;
+}
+
+#schedule_table>tr:nth-child(even){
+  background-color: #209CED;
+  color: white;
+}
+
+#schedule_table>tr:nth-child(odd){
+  background-color: #96BFFF;
+  color:white;
+}
+
+/* tr:nth-child(even) {background-color: #f2f2f2;}
+th {
+  background-color: #4CAF50;
+  color: white;
+} */
+
+/* .table-header-25 {
   width: 25%;
 }
 .table-header-50 {
-  width: 50%;
-}
+  width: 55%;
+} */
 
 /* ---- particles ---- */
 
